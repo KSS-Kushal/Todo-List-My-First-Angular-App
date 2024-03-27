@@ -1,0 +1,14 @@
+<div
+  class="button"
+  [ngStyle]="hover?{
+    'background-color': hoverBackgroundColor,
+    'border-color': hoverBorderColor,
+  }:{
+    'background-color': backgroundColor,
+    'border-color': borderColor,
+  }"
+  (mouseover)="hover=true" (mouseleave)="hover=false"
+  (click)="handleClick()"
+>
+  {{ text }}
+</div>

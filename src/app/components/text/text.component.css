@@ -1,0 +1,9 @@
+.textStyles{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.strike{
+    text-decoration: line-through;
+}

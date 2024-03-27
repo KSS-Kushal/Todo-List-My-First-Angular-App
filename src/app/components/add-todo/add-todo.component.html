@@ -1,0 +1,22 @@
+<div class="mainContainer">
+  <app-text [text]="'Add Todo'" [fontSize]="18" [fontWeight]="600"></app-text>
+  <form class="formContainer">
+    <app-input
+      [id]="'title'"
+      [label]="'Todo Title'"
+      [placeholder]="'Enter Todo Title'"
+      [value]="title"
+      (handleChange)="onChangeTitle($event)"
+    ></app-input>
+    <app-input
+      [id]="'description'"
+      [label]="'Todo Description'"
+      [placeholder]="'Enter Todo Description'"
+      [value]="description"
+      (handleChange)="onChangeDescription($event)"
+    ></app-input>
+    <div class="buttonContainer">
+      <app-button [text]="'Add Todo'" (onClick)="addTodo()"></app-button>
+    </div>
+  </form>
+</div>

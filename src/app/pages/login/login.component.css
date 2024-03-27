@@ -1,0 +1,19 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 52px - 26px);
+}
+
+.formContainer{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.textContainer{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

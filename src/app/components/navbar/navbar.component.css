@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 12px;
+    background-color: #DCF2F1;
+    height: 52px;
+    box-sizing: border-box;
+}
+
+.brand{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    color: #008DDA;
+}

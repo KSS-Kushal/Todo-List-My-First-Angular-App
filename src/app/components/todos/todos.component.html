@@ -1,0 +1,18 @@
+<div class="maincontainer">
+  <app-text [text]="'Your Todos'" [fontSize]="18" [fontWeight]="600"></app-text>
+  <div *ngIf="todos.length === 0 else elseBlock">
+    <app-text [text]="'Nothing to show'"></app-text>
+  </div>
+  <ng-template #elseBlock>
+    
+    <div class="todoContainer">
+      <div *ngFor="let todo of todos" class="container">
+        <app-todo-item
+          [todo]="todo"
+          (handleDelete)="deleteTodo($event)"
+          (handleMarkAsDone)="markAsDone($event)"
+        ></app-todo-item>
+      </div>
+    </div>
+  </ng-template>
+</div>

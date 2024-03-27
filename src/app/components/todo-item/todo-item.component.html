@@ -1,0 +1,8 @@
+<div class="mainContainer">
+    <app-text [text]="todo.title" [fontSize]="18" [fontWeight]="600" [className]="{'strike': !todo.active}"></app-text>
+    <app-text [text]="todo.description" [fontSize]="14" [fontWeight]="500" [className]="{'strike': !todo.active}"></app-text>
+    <div class="buttonContainer">
+        <app-check-box [id]="'done'+todo._id" label="Done" (onClick)="onCheckBoxClick(todo)" [value]="!todo.active"></app-check-box>
+        <app-button text="Delete" [backgroundColor]="'#FA1616'" [hoverBackgroundColor]="'#FF204E'" (onClick)="clickDeleteBtn(todo)"></app-button>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="navbar">
+  <div class="brand">TODO LIST</div>
+  <div *ngIf="login; else elseBlock">
+    <app-button
+      (onClick)="logOut()"
+      text="Log out"
+    ></app-button>
+  </div>
+  <ng-template #elseBlock>
+    <app-button
+      (onClick)="router.navigate(['/login'])"
+      text="Login"
+    ></app-button>
+  </ng-template>
+</div>

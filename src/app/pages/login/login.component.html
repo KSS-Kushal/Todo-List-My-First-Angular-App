@@ -1,0 +1,38 @@
+<div class="mainContainer">
+  <form class="formContainer">
+    <app-input
+      [id]="'email'"
+      [label]="'Email'"
+      [placeholder]="'Enter Email'"
+      [value]="email"
+      (handleChange)="onChangeEmail($event)"
+    ></app-input>
+    <app-input
+      [id]="'password'"
+      [label]="'Password'"
+      [type]="'password'"
+      [placeholder]="'Enter Password'"
+      [value]="password"
+      (handleChange)="onChangePassword($event)"
+    ></app-input>
+    <div class="buttonContainer">
+      <app-button [text]="'Login'" (onClick)="login()"></app-button>
+    </div>
+    <div class="textContainer">
+      <app-text
+        text="Don't have an account?"
+        [fontSize]="12"
+        [fontWeight]="600"
+      ></app-text>
+      <div (click)="router.navigate(['/signup'])">
+      <app-text
+        [text]="'Sign up'"
+        [color]="'#008DDA'"
+        [fontSize]="12"
+        [fontWeight]="600"
+        style="cursor: pointer;"
+      ></app-text>
+    </div>
+    </div>
+  </form>
+</div>

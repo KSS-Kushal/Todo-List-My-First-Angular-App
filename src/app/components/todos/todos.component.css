@@ -1,0 +1,29 @@
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.todoContainer{
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    flex:1
+}
+
+@media screen and (max-width: 450px) {
+    .todoContainer{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .container{
+        width: 90%;
+    }
+}

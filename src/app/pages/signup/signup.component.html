@@ -1,0 +1,31 @@
+<div class="mainContainer">
+    <form class="formContainer">
+      <app-input
+        [id]="'name'"
+        [label]="'Name'"
+        [placeholder]="'Enter Full Name'"
+        [value]="name"
+        (handleChange)="onChangeName($event)"
+      ></app-input>
+      <app-input
+        [id]="'email'"
+        [label]="'Email'"
+        [placeholder]="'Enter Email'"
+        [value]="email"
+        (handleChange)="onChangeEmail($event)"
+      ></app-input>
+      <app-input
+        [id]="'password'"
+        [label]="'Password'"
+        [type]="'password'"
+        [placeholder]="'Enter Password'"
+        [value]="password"
+        (handleChange)="onChangePassword($event)"
+      ></app-input>
+      <div class="buttonContainer">
+        <app-button [text]="'Sign up'" (onClick)="signup()"></app-button>
+      </div>
+      
+    </form>
+  </div>
+  

@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.input{
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    border: 1px solid #008DDA;
+    cursor: pointer;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.label{
+    cursor: pointer;
+    user-select: none;
+}
